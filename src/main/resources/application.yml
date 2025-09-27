@@ -1,0 +1,12 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: react-demo-basic
+
+  data:
+    mongodb:
+      database: productdb
+      host: localhost
+      port: 27017
