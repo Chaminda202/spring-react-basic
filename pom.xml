@@ -17,6 +17,7 @@
 		<java.version>21</java.version>
 		<mapstruct.version>1.6.3</mapstruct.version>
 		<lombok.version>1.18.40</lombok.version>
+		<wiremock.version>3.13.1</wiremock.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -103,6 +104,20 @@
             <scope>test</scope>
         </dependency>
         <!-- End Testcontainers for JUnit 5 + MongoDB -->
+
+        <!-- Mock Third Party Integration Call using Wiremock-->
+        <dependency>
+            <groupId>org.wiremock.integrations.testcontainers</groupId>
+            <artifactId>wiremock-testcontainers-module</artifactId>
+            <version>1.0-alpha-13</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.wiremock</groupId>
+            <artifactId>wiremock</artifactId>
+            <version>3.13.1</version>
+            <scope>test</scope>
+        </dependency>
 
 	</dependencies>
 	<build>

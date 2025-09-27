@@ -10,3 +10,10 @@ spring:
       database: productdb
       host: localhost
       port: 27017
+
+external:
+  discount-api:
+    base-url: http://localhost:8085/discount
+
+  inventory-api:
+    base-url: http://localhost:8088/inventory
